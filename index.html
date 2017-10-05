@@ -1,0 +1,75 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sha 1 Online - Roger Vilà</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+</head>
+<body>
+
+    <header class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    SHA 1 Online
+                </h1>
+                <h2 class="subtitle">
+                    sha1 online hash generator
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <form action="#">
+                <div class="field">
+                    <label class="label">Input</label>
+                    <div class="control">
+                        <input autocomplete="off" id="input" class="input" type="password" placeholder="Text input">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Result</label>
+                    <div class="control">
+                        <input id="result" readonly class="input" type="text" placeholder="Result">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-4739670084306482"
+    data-ad-slot="3842929058"
+    data-ad-format="auto"></ins>
+
+    <hr>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Sha 1 online</strong> by <a href="http://rogervila.es">Roger Vilà</a>. The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.4.1/sha1.min.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+
+        document.getElementById('input').addEventListener('keyup', function(e){
+            e.preventDefault();
+            document.getElementById('result').value = sha1(this.value);
+        });
+    </script>
+</body>
+</html>

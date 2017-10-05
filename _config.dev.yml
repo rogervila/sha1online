@@ -1,0 +1,3 @@
+title: SHA 1 Online - Roger Vilà
+exclude: ['package.json', 'package-lock.json', 'webpack.mix.js', 'node_modules','vendor','Gemfile','Gemfile.lock','mix-manifest.json']
+timezone: Europe/Madrid
