@@ -11,9 +11,10 @@ layout: compress
     <title>{{ site.title }}</title>
     <meta name="description" content="sha1 online free conversions. open source website.">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <!--<link rel="preload" href="https://adservice.google.es/adsid/integrator.js?domain=rogervila.es" as="script">-->
-    {% include styles.html %}
-    {% include scripts.html %}
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
+    {% include services.html %}
 </head>
 
 <body>
@@ -24,15 +25,19 @@ layout: compress
         <h2 class="title is-5">Create your SHA1 password</h2>
         <div class="columns">
             <div class="column is-hidden-mobile">
+                {% comment %}
                 <!--LEFT AD-->
                 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4739670084306482" data-ad-slot="3492056012" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                {% endcomment %}
             </div>
             <div class="column is-half">
                 {% include form.html %}
             </div>
             <div class="column is-hidden-mobile">
+                {% comment %}
                 <!--RIGHT AD-->
                 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4739670084306482" data-ad-slot="1088705210" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                {% endcomment %}
             </div>
         </div>
     </section>
@@ -52,6 +57,7 @@ layout: compress
     </section>
 
     {% include footer.html %}
+    {% include scripts.html %}
 </body>
 
 </html>
